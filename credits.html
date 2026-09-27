@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Credits — FINVEST</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#06080c;--surface:#0b0e14;--border:#1c2330;
+  --text:#e8edf5;--sub:#8898ae;--dim:#4a5568;
+  --accent:#4af0c4;--green:#3dd68c;
+  --mono:'JetBrains Mono',monospace;--sans:'Syne',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--text);font-family:var(--sans);min-height:100vh;display:grid;place-items:center;padding:32px 16px;
+  background:radial-gradient(ellipse at 60% 0%,rgba(74,240,196,.05) 0%,transparent 55%),var(--bg);}
+.card{width:min(680px,100%);background:var(--surface);border:1px solid var(--border);border-radius:24px;padding:48px 44px;position:relative;overflow:hidden}
+.card::before{content:'';position:absolute;top:0;right:0;width:200px;height:200px;background:radial-gradient(circle,rgba(74,240,196,.07),transparent 70%);pointer-events:none}
+.label{font-family:var(--mono);font-size:10px;color:var(--sub);letter-spacing:.14em;margin-bottom:20px}
+.logo{font-size:42px;font-weight:800;letter-spacing:-.02em;margin-bottom:28px}
+.logo span{color:var(--accent)}
+.built-by{font-size:13px;color:var(--sub);font-family:var(--mono);margin-bottom:6px;text-transform:uppercase;letter-spacing:.1em}
+.name{font-size:30px;font-weight:800;letter-spacing:-.02em;margin-bottom:24px}
+.bio{font-size:15px;line-height:1.75;color:var(--sub);max-width:560px}
+.bio strong{color:var(--text)}
+.divider{height:1px;background:var(--border);margin:28px 0}
+.back{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 18px;border:1px solid var(--border);border-radius:10px;
+  font-size:13px;font-weight:700;color:var(--sub);text-decoration:none;
+  transition:.15s;background:rgba(255,255,255,.02);
+}
+.back:hover{color:var(--text);border-color:rgba(74,240,196,.3);background:rgba(74,240,196,.04)}
+@media(max-width:520px){.card{padding:32px 24px}.logo{font-size:34px}.name{font-size:24px}.bio{font-size:14px}}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="label">FINVEST · CREDITS</div>
+  <div class="logo">FIN<span>VEST</span></div>
+  <div class="built-by">Built by</div>
+  <div class="name">Siddhanth RD</div>
+  <p class="bio">I'm <strong>Siddhanth RD</strong>, a beginner vibe coder and web designer from <strong>Darjeeling, West Bengal, India</strong>. Currently studying in Class IX, I enjoy turning ideas into small, creative web projects. I build innovative and fun things mainly out of curiosity — experimenting, learning, and seeing what I can create with code.</p>
+  <div class="divider"></div>
+  <a class="back" href="index.html">← Back to FINVEST</a>
+</main>
+</body>
+</html>
